@@ -3,6 +3,11 @@
   "description": "Asynchronous, non-blocking SQLCipher bindings",
   "version": "4.0.0",
   "homepage": "http://github.com/echozeta/node-sqlcipher",
+   "binary": {
+    "module_name": "node_sqlite3",
+    "module_path": "./lib/binding/{node_abi}-{platform}-{arch}",
+    "host": "https://journeyapps-node-binary.s3.amazonaws.com",
+  },
   "contributors": [
     "Konstantin Käfer <mail@kkaefer.com>",
     "Dane Springmeyer <dane@mapbox.com>",
@@ -21,6 +26,7 @@
     "Mithgol",
     "Ben Noordhuis <ben@strongloop.com>"
   ],
+  
   "repository": {
     "type": "git",
     "url": "git://github.com/echozeta/sqlcipher-nodejs.git"
